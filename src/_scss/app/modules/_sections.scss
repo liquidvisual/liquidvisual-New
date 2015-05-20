@@ -1,0 +1,103 @@
+/*
+    SECTIONS.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Sections
+//-----------------------------------------------------------------
+
+.section {
+	position: relative;
+	padding: rem-calc(60 0);
+}
+
+.dark-section {
+	color: $light-bg-color;
+	background: $dark-bg-color;
+
+	h1, h2, h3, h4, h5, h6 {
+		// color: $primary-color;
+		color: white;
+	}
+}
+
+.light-section {
+	// color: ;
+	background: $light-bg-color;
+
+	h1, h2, h3, h4, h5, h6 {
+		// color: $primary-color;
+	}
+}
+
+.color-section {
+	background: $primary-color;
+
+	h1, h2, h3, h4, h5, h6, p {
+		color: white;
+	}
+
+	.button {
+		background: white;
+		color: $primary-color;
+	}
+}
+
+//=========================================
+//
+//=========================================
+
+//-----------------------------------------------------------------
+// Image Section
+//-----------------------------------------------------------------
+
+.image-section {
+	position: relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+    color: white;
+
+    h1, h2, h3, h4, h5, h6 {
+    	color: white;
+    }
+
+    //=========================================
+    // Buttons
+    //=========================================
+
+    .button {
+        color: white; // add variable
+        border: 2px solid white; // add variable
+        background: none;
+    }
+
+    //=========================================
+    // has-fixed-bg
+    //=========================================
+
+    &.is-fixed {
+        // background-attachment: fixed;
+    }
+
+    //=========================================
+    // has-color-overlay
+    //=========================================
+
+    &.is-dark:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(#222, 0.6);
+        z-index: -1;
+    }
+}

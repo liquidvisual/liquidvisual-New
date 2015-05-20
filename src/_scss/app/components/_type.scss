@@ -1,0 +1,121 @@
+/*
+    TYPE.CSS
+
+    - Last updated: ^^^^^^^^
+    - hello@liquidvisual.com
+*/
+//-----------------------------------------------------------------
+// Variables
+//-----------------------------------------------------------------
+//-----------------------------------------------------------------
+// Type
+//-----------------------------------------------------------------
+
+a {
+	@include transition('background');
+}
+
+//=========================================
+// Headings
+//=========================================
+
+h1 {
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: rem-calc(30);
+
+	small {
+		font-weight: normal;
+		font-family: "Gotham Rounded";
+		color: $tertiary-color;
+	}
+}
+
+// Smart override
+.lv-super .subheader {
+	color: $primary-color;
+}
+
+h2.subheader,
+h3.subheader {
+	font-family: 'Permanent Marker', cursive;
+	// background: -webkit-linear-gradient($primary-color, $secondary-color);
+	// background: linear-gradient(90deg, $primary-color, $secondary-color);
+	// display: inline-block;
+	// -webkit-background-clip: text;
+	// -webkit-text-fill-color: transparent;
+}
+
+h4.subheader { font-size: rem-calc(24); }
+h5.subheader { font-size: rem-calc(18); }
+h6.subheader { font-size: rem-calc(18); }
+
+//=========================================
+// Paragraphs
+//=========================================
+
+.smaller-text p {
+	font-size: rem-calc(18);
+}
+
+p {
+	margin-bottom: rem-calc(30);
+}
+
+p.lead {
+	font-family: "Gotham Rounded Book";
+	font-size: rem-calc(32);
+}
+
+//=========================================
+// Divider
+//=========================================
+
+hr {
+	height: 2px;
+	border: 0;
+	margin: rem-calc(30 0);
+
+	background: #00a3bb;
+	background: -moz-linear-gradient(left,  #00a3bb 0%, #ff0055 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00a3bb), color-stop(100%,#ff0055));
+	background: -webkit-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+	background: -o-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+	background: -ms-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+	background: linear-gradient(to right,  #00a3bb 0%,#ff0055 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3bb', endColorstr='#ff0055',GradientType=1 );
+}
+
+.divider {
+	position: relative;
+	z-index: 1;
+	margin: rem-calc(30 0);
+
+	.text {
+		display: inline-block;
+		background: $light-bg-color;
+		padding: rem-calc(0 10);
+	}
+
+	&:before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		top: 11px;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		border: 0;
+
+		background: #00a3bb;
+		background: -moz-linear-gradient(left,  #00a3bb 0%, #ff0055 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00a3bb), color-stop(100%,#ff0055));
+		background: -webkit-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+		background: -o-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+		background: -ms-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
+		background: linear-gradient(to right,  #00a3bb 0%,#ff0055 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3bb', endColorstr='#ff0055',GradientType=1 );
+	}
+}
