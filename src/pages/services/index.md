@@ -1,8 +1,7 @@
 ---
-layout: homepage
-title: Home
-permalink: /
-theme: "home-theme"
+layout: internal/tutorials
+title: Services
+permalink: /services/
 hero_image: "/img/content/banner-1.jpg"
 ---
 

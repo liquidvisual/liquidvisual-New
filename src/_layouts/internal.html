@@ -1,24 +1,32 @@
 ---
 layout: master
+logo_type: "/img/content/logo-type-white-transparent.svg"
 ---
 
+{% assign hero_image = page.hero_image %}
+
 <!-- HERO -->
-<div class="lv-hero">
-    <div class="row outer-row">
-        <div class="medium-8 medium-centered columns">
-            <div class="lv-hero-caption animated fadeInLeft">
-                <h1>Build Responsive Mega Menu with Foundation</h1>
-                <h2 class="subheader">Give your clients more</h2>
+<div class="lv-hero is-alternate" style="background-image: url('{{ hero_image | prepend: site.assets }}')" data-background-image="{{ hero_image | prepend: site.assets }}">
+    <div class="lv-hero-caption animated fadeInLeft">
+        <div class="row outer-row">
+            <div class="large-11 columns">
+                <h1>{{ page.title }}</h1>
+                <p class="subtext"><i class="fi-calendar"></i> Written by <strong>Mitch</strong> on Jan 28, 2015</p>
             </div>
         </div>
     </div>
-</div> <!-- .hero -->
+
+    <div class="lv-hero-down-button">
+        <a href="#"><i class="fa fa-angle-down"></i></a>
+    </div>
+</div>
 
 <!-- BREADCRUMBS -->
-<nav class="breadcrumbs-bar">
-    <div class="row collapse outer-row">
+<nav class="lv-breadcrumbs-wrapper">
+    <div class="row outer-row">
         <div class="columns">
-            {% include snippets/breadcrumbs.html %}
+            {% include breadcrumbs.html %}
+            <div class="divider"></div>
         </div>
     </div>
 </nav>

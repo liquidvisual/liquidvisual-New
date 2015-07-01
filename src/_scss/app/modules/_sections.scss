@@ -1,7 +1,7 @@
 /*
     SECTIONS.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 02.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
@@ -16,24 +16,46 @@
 	padding: rem-calc(60 0);
 }
 
+//-----------------------------------------------------------------
+// Dark Section
+//-----------------------------------------------------------------
+
 .dark-section {
 	color: $light-bg-color;
 	background: $dark-bg-color;
 
+    p.lead {
+        color: darken($light-bg-color, 15%);
+        // color: $tertiary-color;
+        // color: $light-bg-color;
+        // color: white;
+    }
+
 	h1, h2, h3, h4, h5, h6 {
-		// color: $primary-color;
 		color: white;
 	}
 }
 
-.light-section {
-	// color: ;
-	background: $light-bg-color;
+//=========================================
+// Darker Section
+// Used for breadcrumbs mostly
+//=========================================
 
-	h1, h2, h3, h4, h5, h6 {
-		// color: $primary-color;
-	}
+.darker-section {
+    background: darken($dark-bg-color, 4%);
 }
+
+//-----------------------------------------------------------------
+// Light - Redundant?
+//-----------------------------------------------------------------
+
+.light-section {
+	background: $light-bg-color;
+}
+
+//-----------------------------------------------------------------
+// Color Section
+//-----------------------------------------------------------------
 
 .color-section {
 	background: $primary-color;
@@ -47,10 +69,6 @@
 		color: $primary-color;
 	}
 }
-
-//=========================================
-//
-//=========================================
 
 //-----------------------------------------------------------------
 // Image Section

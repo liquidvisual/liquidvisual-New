@@ -21,9 +21,18 @@ $hero-height: rem-calc(600);
 	background: url(../img/content/banner-1.jpg) no-repeat center center;
 	background-size: cover;
 
-	@media #{$large-up} {
+	@media #{$xlarge-up} {
 	    // background-attachment: fixed;
 	}
+
+	.subtext {
+		color: white;
+		font-size: $h5-font-size;
+	}
+
+	//=========================================
+	// hero Caption
+	//=========================================
 
 	.lv-hero-caption {
 		padding-bottom: rem-calc(50); // variable
@@ -50,6 +59,24 @@ $hero-height: rem-calc(600);
 
 .lv-hero.is-alternate {
 
+	@media #{$small-only} {
+		// height: 100%;
+		height: auto;
+		display: block;
+		padding-top: rem-calc(100); // variable * 2
+	}
+
+	.lv-hero-caption {
+		// padding-bottom: 0;
+		vertical-align: bottom;
+
+		h1 {
+			// text-transform: lowercase;
+			@media #{$medium-up} {
+			    font-size: rem-calc(56);
+			}
+		}
+	}
 }
 
 //-----------------------------------------------------------------

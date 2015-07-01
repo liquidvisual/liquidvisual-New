@@ -87,9 +87,8 @@ $include-html-global-classes: $include-html-classes;
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Gotham Rounded Book";
-// $font-family-sans-serif: "Gotham Rounded", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-// $font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-sans-serif: "Gotham Rounded Book", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: "Permanent Marker", Georgia, Cambria, "Times New Roman", Times, serif;
 // $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 // We use these to define default font weights
@@ -129,8 +128,8 @@ $light-bg-color: #EFF1F4;
 // $black       : #000000;
 
 // We use these to control various global styles
-$body-bg: $dark-bg-color;
-$body-font-color: #666;
+$body-bg: $light-bg-color;
+$body-font-color: #555;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -217,16 +216,16 @@ $h1-font-size: rem-calc(66);
 $h2-font-size: rem-calc(48);
 $h3-font-size: rem-calc(32);
 $h4-font-size: rem-calc(24);
-$h5-font-size: rem-calc(18);
-$h6-font-size: rem-calc(18);
+$h5-font-size: rem-calc(20);
+$h6-font-size: rem-calc(20);
 
 // We use these to control header size reduction on small screens
-// $h1-font-reduction: rem-calc(10) !default;
-// $h2-font-reduction: rem-calc(10) !default;
-// $h3-font-reduction: rem-calc(5) !default;
-// $h4-font-reduction: rem-calc(5) !default;
-// $h5-font-reduction: 0 !default;
-// $h6-font-reduction: 0 !default;
+$h1-font-reduction: rem-calc(30);
+$h2-font-reduction: rem-calc(15);
+$h3-font-reduction: rem-calc(5);
+$h4-font-reduction: rem-calc(5);
+$h5-font-reduction: rem-calc(1);
+$h6-font-reduction: rem-calc(1);
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
@@ -242,7 +241,8 @@ $subheader-font-color: $primary-color; //scale-color($header-font-color, $lightn
 // We use these to style paragraphs
 // $paragraph-font-family: inherit;
 // $paragraph-font-weight: $font-weight-normal;
-$paragraph-font-size: rem-calc(18);
+$paragraph-font-size: rem-calc(20);
+// $paragraph-font-size: rem-calc(18);
 $paragraph-line-height: 1.6;
 // $paragraph-margin-bottom: rem-calc(20);
 // $paragraph-aside-font-size: rem-calc(14);

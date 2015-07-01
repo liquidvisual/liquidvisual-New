@@ -26,7 +26,7 @@ $global-radius: rem-calc(8) !default;
 	@media #{$large-up} {
 	    position: absolute;
 	    top: rem-calc(40);
-	    right: 0;
+	    right: rem-calc(15);
 	    width: 100%;
 	    z-index: 5;
 	}

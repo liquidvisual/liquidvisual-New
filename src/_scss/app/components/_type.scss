@@ -32,6 +32,14 @@ p {
 	// line-height: 30px;
 }
 
+
+// Perfect compromise
+h5, h6 {
+	@media #{$small-only} {
+	    font-weight: normal;
+	}
+}
+
 h1, h2, h3, h4, h5, h6 {
 	// margin-bottom: rem-calc(30);
 
@@ -49,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2.subheader,
 h3.subheader {
-	font-family: 'Permanent Marker', cursive;
+	font-family: $font-family-serif;
 	// background: -webkit-linear-gradient($primary-color, $secondary-color);
 	// background: linear-gradient(90deg, $primary-color, $secondary-color);
 	// display: inline-block;
@@ -65,18 +73,18 @@ h6.subheader { font-size: rem-calc(18); }
 // Paragraphs
 //=========================================
 
-.smaller-text p {
-	font-size: rem-calc(18);
-}
-
 p {
-	margin-bottom: rem-calc(30);
+	margin-bottom: rem-calc(30); // variabilise
 }
 
 p.lead {
-	// font-family: "Gotham Rounded Book";
-	// font-size: rem-calc(32);
-	font-size: rem-calc(28);
+	font-size: rem-calc(22);
+	color: darken($body-font-color, 10%);
+	margin-bottom: rem-calc(50); // variablise
+
+	@media #{$medium-up} {
+	    font-size: rem-calc(28);
+	}
 }
 
 //=========================================
@@ -88,14 +96,16 @@ hr {
 	border: 0;
 	margin: rem-calc(30 0);
 
-	background: #00a3bb;
-	background: -moz-linear-gradient(left,  #00a3bb 0%, #ff0055 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00a3bb), color-stop(100%,#ff0055));
-	background: -webkit-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
-	background: -o-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
-	background: -ms-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
-	background: linear-gradient(to right,  #00a3bb 0%,#ff0055 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3bb', endColorstr='#ff0055',GradientType=1 );
+
+	//make mixin
+	background: $primary-color;
+	background: -moz-linear-gradient(left,  $primary-color 0%, $secondary-color 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,$primary-color), color-stop(100%,$secondary-color));
+	background: -webkit-linear-gradient(left,  $primary-color 0%,$secondary-color 100%);
+	background: -o-linear-gradient(left,  $primary-color 0%,$secondary-color 100%);
+	background: -ms-linear-gradient(left,  $primary-color 0%,$secondary-color 100%);
+	background: linear-gradient(to right,  $primary-color 0%,$secondary-color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$secondary-color',GradientType=1 );
 }
 
 .divider {
@@ -119,13 +129,13 @@ hr {
 		height: 2px;
 		border: 0;
 
-		background: #00a3bb;
-		background: -moz-linear-gradient(left,  #00a3bb 0%, #ff0055 100%);
-		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#00a3bb), color-stop(100%,#ff0055));
-		background: -webkit-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
-		background: -o-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
-		background: -ms-linear-gradient(left,  #00a3bb 0%,#ff0055 100%);
-		background: linear-gradient(to right,  #00a3bb 0%,#ff0055 100%);
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a3bb', endColorstr='#ff0055',GradientType=1 );
+		background: $primary-color;
+		background: -moz-linear-gradient(left,  $primary-color 0%, $secondary-color 100%);
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,$primary-color), color-stop(100%,$secondary-color));
+		background: -webkit-linear-gradient(left,  $primary-color 0%,$secondary-color 100%);
+		background: -o-linear-gradient(left,  $primary-color 0%,$secondary-color 100%);
+		background: -ms-linear-gradient(left,  $primary-color 0%,$secondary-color 100%);
+		background: linear-gradient(to right,  $primary-color 0%,$secondary-color 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$secondary-color',GradientType=1 );
 	}
 }

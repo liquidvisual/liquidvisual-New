@@ -1,5 +1,5 @@
 /*
-    HEADER.CSS
+    BREADCRUMBS.CSS
 
     - Last updated: ^^^^^^^^
     - hello@liquidvisual.com
@@ -8,19 +8,14 @@
 // Variables
 //-----------------------------------------------------------------
 //-----------------------------------------------------------------
-// Header
+// Breadcrumbs
 //-----------------------------------------------------------------
 
-.global-header {
-	position: absolute;
-	top: rem-calc(30);
-	width: 100%;
-
-	.logo {
-		position: relative;
-		z-index: 10;
-	}
+.lv-breadcrumbs {
+	background: #1E1E22;
+	padding: rem-calc(30 0);
 }
+
 
 //=========================================
 //
