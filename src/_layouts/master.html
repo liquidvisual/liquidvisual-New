@@ -53,15 +53,15 @@
 </head>
 <body>
     <div class="lv-super">
-        <div class="lv-page">
+        <div class="lv-page {{ page.theme }}">
 
             <!-- HEADER -->
-            <header class="page-header">
+            <header class="global-header">
                 {% include header.html %}
             </header>
 
             <!-- NAVIGATION -->
-            <nav class="page-navigation show-for-large-up">
+            <nav class="global-navigation show-for-xlarge-up">
                 <div class="row outer-row">
                     <div class="columns">
                         <div class="topbar">
@@ -74,7 +74,7 @@
             {{ content }}
 
             <!-- FOOTER -->
-            <footer class="page-footer hide">
+            <footer class="global-footer hide">
                 {% include footer.html %}
             </footer>
 

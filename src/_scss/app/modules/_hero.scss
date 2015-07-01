@@ -1,12 +1,15 @@
 /*
     HERO.CSS
 
-    - Last updated: ^^^^^^^^
+    - Last updated: 01.06.15
     - hello@liquidvisual.com
 */
 //-----------------------------------------------------------------
 // Variables
 //-----------------------------------------------------------------
+
+$hero-height: rem-calc(600);
+
 //-----------------------------------------------------------------
 // Hero
 //-----------------------------------------------------------------
@@ -14,7 +17,7 @@
 .lv-hero {
 	display: table;
 	width: 100%;
-	height: 100%;
+	height: $hero-height;
 	background: url(../img/content/banner-1.jpg) no-repeat center center;
 	background-size: cover;
 
@@ -22,31 +25,36 @@
 	    // background-attachment: fixed;
 	}
 
-	h1 {
-		color: white;
-		font-size: rem-calc(76);
-	}
-
-	// Vertically align the caption
-	.outer-row {
+	.lv-hero-caption {
+		padding-bottom: rem-calc(50); // variable
 		display: table-cell;
 		vertical-align: middle;
+
+		h1 {
+			color: white;
+		}
 	}
-
-	.lv-hero-caption {
-		text-align: center;
-		padding-bottom: rem-calc(50);
-	}
-
-	// @media #{$medium-up} and (min-height: 768px) {
-	// 	background-size: calc(1200px / 2); // image halved
-	// }
-
-	// @media #{$large-up} {
-	//     height: 100vh;
-	//     border-bottom: 0;
-	// }
 }
+
+//-----------------------------------------------------------------
+// FULLSCREEN HERO
+//-----------------------------------------------------------------
+
+.lv-hero.is-fullscreen {
+	height: 100%;
+}
+
+//-----------------------------------------------------------------
+// ALTERNATE HERO
+//-----------------------------------------------------------------
+
+.lv-hero.is-alternate {
+
+}
+
+//-----------------------------------------------------------------
+//
+//-----------------------------------------------------------------
 
 //=========================================
 // LV HERO MORE BUTTON
@@ -94,4 +102,13 @@
 //             -ms-transform: translateY(-40%);
 //                 transform: translateY(-40%);
 //     }
+// }
+
+// @media #{$medium-up} and (min-height: 768px) {
+// 	background-size: calc(1200px / 2); // image halved
+// }
+
+// @media #{$large-up} {
+//     height: 100vh;
+//     border-bottom: 0;
 // }

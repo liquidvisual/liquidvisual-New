@@ -11,10 +11,15 @@
 // Header
 //-----------------------------------------------------------------
 
-.page-header {
+.global-header {
 	position: absolute;
 	top: rem-calc(30);
 	width: 100%;
+
+	.logo {
+		position: relative;
+		z-index: 10;
+	}
 }
 
 //=========================================

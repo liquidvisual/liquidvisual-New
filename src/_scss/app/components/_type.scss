@@ -23,8 +23,17 @@ h1 {
 	text-transform: uppercase;
 }
 
+p {
+	/* The logo I chose to : */
+	// font-family: GothamRounded-Light;
+	// font-weight: 500;
+	// font-family: 'Gotham Rounded Book';
+	// font-size: 26px;
+	// line-height: 30px;
+}
+
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom: rem-calc(30);
+	// margin-bottom: rem-calc(30);
 
 	small {
 		font-weight: normal;
@@ -65,8 +74,9 @@ p {
 }
 
 p.lead {
-	font-family: "Gotham Rounded Book";
-	font-size: rem-calc(32);
+	// font-family: "Gotham Rounded Book";
+	// font-size: rem-calc(32);
+	font-size: rem-calc(28);
 }
 
 //=========================================

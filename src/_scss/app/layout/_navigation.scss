@@ -14,13 +14,27 @@ $global-radius: rem-calc(8) !default;
 // Navigation
 //-----------------------------------------------------------------
 
-.page-navigation {
-	position: absolute;
-	top: rem-calc(40);
-	width: 100%;
+.global-navigation {
+
 }
 
+//-----------------------------------------------------------------
+// Topbar
+//-----------------------------------------------------------------
+
 .topbar {
+	@media #{$large-up} {
+	    position: absolute;
+	    top: rem-calc(40);
+	    right: 0;
+	    width: 100%;
+	    z-index: 5;
+	}
+
+	//=========================================
+	//
+	//=========================================
+
 	ul {
 		font-family: "Montserrat";
 		background: rgba(255,255,255,0.12);
@@ -29,6 +43,7 @@ $global-radius: rem-calc(8) !default;
 		border-radius: $global-radius;
 		float: right;
 		font-size: rem-calc(16);
+		// text-transform: lowercase;
 	}
 
 	li {
@@ -53,6 +68,10 @@ $global-radius: rem-calc(8) !default;
 			background: rgba(255,255,255,0.15);
 			// background: #00a3bb;
 		}
+	}
+
+	li.active:not(:first-child) > a {
+		background: rgba(255,255,255,0.15);
 	}
 }
 
